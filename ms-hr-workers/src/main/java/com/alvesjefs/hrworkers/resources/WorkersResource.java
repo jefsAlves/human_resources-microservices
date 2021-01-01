@@ -32,7 +32,7 @@ public class WorkersResource {
 		return ResponseEntity.ok().body(find);
 	}
 
-	@GetMapping(value = "/find")
+	@GetMapping(value = "/search")
 	public ResponseEntity<Workers> findByName(@RequestParam String name) {
 		Workers findName = workersService.findByName(name);
 		return ResponseEntity.ok().body(findName);
