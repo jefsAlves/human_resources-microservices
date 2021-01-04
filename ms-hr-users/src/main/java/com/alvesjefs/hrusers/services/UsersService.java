@@ -34,4 +34,5 @@ public class UsersService {
 		Users findName = usersRepository.findByName(name);
 		return findName;
 	}
+
 }
